@@ -32,7 +32,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-
+  z-index: 100;
 }
 .wrapper {
   max-width: 1100px;
