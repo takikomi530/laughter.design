@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laughter.design</title>
+  <meta name="description" content="素敵なデザインをあなたと。">
+  <link rel="icon" type="image/png" href="images/L.d.png">
+  <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand&family=Yomogi&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <!--HEADER-->
+  <header class="page-header wrapper">
+    <h1><a href="index.html"><img class="logo" src="images/logo-portfolio.png" alt="laughter.designホーム"></a></h1>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="#about-title">about</a></li>
+        <li><a href="#works-title">works</a></li>
+        <li><a href="#contact-title">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!--contact-->
+    <div class="contact wrapper">
+      <img id="contact-title" src="images/contact.png" alt="contact">
+      <form
+        action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSe00eJN0CWayVTtmGW0ONrc6MT8bA5no3F9iHgbGwaOm18KRw/formResponse"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="submitted=true;"
+        class="c-form"
+      >  
+        <div>
+          <label for="name">name</label>
+          <input
+            name="entry.1192199861"
+            class="c-form__input"
+            id="field-name"
+            placeholder="おなまえ　花子"
+            type="text"
+            required="required"
+          />
+        </div>
+        <div>
+          <label for="email">mail adress</label>
+          <input
+            name="entry.1758713177"
+            class="c-form__input"
+            id="field-mail"
+            placeholder="sample@gmail.com"
+            type="email"
+            required="required"
+          />
+        </div>
+        <div>
+          <label for="message">message</label>
+          <textarea
+            name="entry.1838586632"
+            class="c-form__input"
+            id="field-message"
+            placeholder="お問い合わせ内容"
+          ></textarea>
+        </div>
+        <input type="submit" class="button" value="send">
+      </form>
+
+    </div><!--/.contact wrapper-->
+  
+  <img class="thanks-koala" src="images/thanks koala2.png" alt="送信ありがとうございます">
+  <!--footer-->
+  <footer>
+    <div class="thanksPage">
+    <div class="wrapper">
+      <p><small>&copy; 2023 Natsue Ideuchi</small></p>
+    </div>
+    </div>
+  </footer>
+</body>
+</html>
