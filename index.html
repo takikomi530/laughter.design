@@ -4,39 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laughter.design</title>
-  <meta name="description" content="素敵なデザインをあなたと。">
+  <meta name="description" content="想いをカタチに。">
   <link rel="icon" type="image/png" href="images/L.d.png">
   <!--CSS-->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "k04nnfilf9");
-  </script>
 </head>
-
-<script type="text/javascript">
-  let submitted = false;
-</script>
-<iframe
-  name="hidden_iframe"
-  id="hidden_iframe"
-  style="display: none"
-  onload="if(submitted){window.location='https://takikomi530.github.io/laughter.design/thanks.html';}"
-></iframe>
 
 <body>
   <!--HEADER-->
   <header class="page-header wrapper">
     <h1><a href="index.html"><img class="logo" src="images/logo-portfolio.png" alt="laughter.designホーム"></a></h1>
-    <nav>
+    
+    <!--ハンバーガーボタン-->
+    <button type="button" class="hamburger">
+      <span></span>
+    </button>
+    <!--ハンバーガーメニュー-->
+    <nav class="ham-nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#about-title">about</a></li>
+        <li class="nav__item"><a href="#works-title">works</a></li>
+        <li class="nav__item"><a href="#service-title">service</a></li>
+        <li class="nav__item"><a href="#contact-title">contact</a></li>
+      </ul>
+    </nav>
+  <!--メインナビ-->
+    <nav class="nav">
       <ul class="main-nav">
-        <li><a href="#about-title">about</a></li>
+        <li><a href="#about-title">about</a></li>  
         <li><a href="#works-title">works</a></li>
+        <li><a href="#service-title">service</a></li>
         <li><a href="#contact-title">contact</a></li>
       </ul>
     </nav>
@@ -82,23 +81,28 @@
   </div>
 
     <!--works-->
-    <div class="works wrapper">+
-      <img id="works-title" src="images/works.png" alt="wolks">
+    <div class="works wrapper">
+      <div id="works-title">
+        <img src="images/works.png" alt="wolks">
+      </div>
       <div class="wrapper grid">
         <div class="item">
-          <a href="works.html#momoyama"><img src="images/momoyama.png" alt="momoyamans"></a>
+          <a href="page-works.html#kato"><img src="images/katodc.png" alt="かとう歯科医院"></a>
         </div>
         <div class="item">
-          <a href="works.html#mogumogu"><img src="images/mogumogu.png" alt="mogumogukitchen"></a>
+          <a href="page-works.html#momoyama"><img src="images/momoyama.png" alt="momoyamans"></a>
         </div>
         <div class="item">
-          <a href="works.html#bodytrim"><img src="images/body-trim.png" alt="bodytrim"></a>
+          <a href="page-works.html#mogumogu"><img src="images/mogumogu.png" alt="mogumogukitchen"></a>
         </div>
         <div class="item">
-          <a href="works.html#harenohi"><img src="images/harenoh.png" alt="harenohi"></a>
+          <a href="page-works.html#bodytrim"><img src="images/body-trim.png" alt="bodytrim"></a>
         </div>
         <div class="item">
-          <a href="works.html#sorairo"><img src="images/sorairo.png" alt="ソライロ"></a>
+          <a href="page-works.html#harenohi"><img src="images/harenoh.png" alt="harenohi"></a>
+        </div>
+        <div class="item">
+          <a href="page-works.html#sorairo"><img src="images/sorairo.png" alt="ソライロ"></a>
         </div>
       </div><!--grid-->
       <div class="wrapper grid">
@@ -108,20 +112,80 @@
       </div>
     </div>
 
+  <!--service-->
+  <div class="service wrapper">
+    <div id="service-title">
+      <img src="images/service.png" alt="service">
+    </div>
+      <div class="service-wrap">
+        <div class="direction">
+          <h3>サイト設計</h3>
+          <img class="direction-img" src="images/direction.png" alt="サイト設計">
+          <p>お客様のご要望をヒヤリングし、サイトの構造や利用するシステムなどを検討し、ワイヤーフレームを作成します。
+            丁寧にヒヤリングを行い、効果的なサイトを制作するための土台を作っていきます。</p>
+        </div>
+        <div class="design">
+          <h3>グラフィックデザイン</h3>
+          <img class="design-img" src="images/design.png" alt="グラフィックデザイン">
+          <p>ヒヤリングの内容をもとにデザインを作成していきます。
+            ”見やすさ” ”使いやすさ” を意識しながら、お客様の想いが伝わるようなデザインを提案させていただきます。</p>
+        </div>
+        <div class="coding">
+          <h3>コーディング</h3>
+          <img class="coding-img" src="images/coding.png" alt="コーディング">
+          <p>HTML,CSS,JavaScript,Wordpress内のPHPに対応いたします。
+            スマートフォン・タブレットでの表示や、納品後の管理・更新のしやすさを考慮してコーディングしていきます。</p>
+        </div>
+      </div>
+    </div>
+
+      <div class="order wrapper">
+        <div class="order-title">
+          <h1>How To Order</h1>
+          <p>ご依頼方法</p>
+        </div>
+        <div class="order-contents">
+          <p class="point">ご依頼前に確認していただきたいこと</p>
+          <div class="point-ct">
+            <img src="images/1.png" alt="1">
+            <p>ご依頼内容<br>ホームページ制作,LP制作,バナー作成など</p>
+          </div>
+          <div class="point-ct">
+            <img src="images/2.png" alt="2">
+            <p>作成ページ予定数<br>ご依頼段階の予定で大丈夫です</p>
+          </div>
+          <div class="point-ct">
+            <img src="images/3.png" alt="3">
+            <p>ご希望のデザイン<br>参考にしたいサイトやイメージ画像など</p>
+          </div>
+          <div class="point-ct">
+            <img src="images/4.png" alt="4">
+            <p>ご希望の納期<br>サイトの公開日等が決まっていればお知らせください</p>
+          </div>
+          <div class="point-ct">
+            <img src="images/5.png" alt="5">
+            <p>ご予算<br>お決まりでしたらお知らせください</p>
+          </div>
+          <div class="point-ct">
+            <img src="images/6.png" alt="6">
+            <p>ドメイン・サーバーのご用意<br>WordPressをご利用予定でしたらご用意ください</p>
+          </div>
+            <p class="point-end">上記の内容をヒヤリングシートにご記入いただきます
+              <br>その他ご不明点などがございましたら、お気軽にお問い合わせください</p>
+        </div>
+        </div>
+
   <!--contact-->
   <div class="contact wrapper">
-    <img id="contact-title" src="images/contact.png" alt="contact">
-      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfAPJSA_qGcn1kJoaIOj8beQ_FNaxaEnTnOj0ewiKSX0IlLzw/formResponse"
-            method="post"
-            target="hidden_iframe"
-            onsubmit="submitted=true;">
-
+    <div id="contact-title">
+      <img src="images/contact.png" alt="contact">
+    </div>
+      <form action="#">
       <div>
         <label for="name">name</label>
         <input
-          name="entry.1192199861"
-          class="c-form__input"
-          id="field-name"
+          name="your-name"
+          id="name"
           placeholder="おなまえ　花子"
           type="text"
           required="required"
@@ -130,9 +194,8 @@
       <div>
         <label for="email">mail adress</label>
         <input
-          name="entry.1758713177"
-			    class="c-form__input"
-			    id="field-mail"
+          name="your-email"
+			    id="email"
 			    placeholder="sample@gmail.com"
 			    type="email"
 			    required="required"
@@ -141,10 +204,9 @@
       <div>
         <label for="message">message</label>
         <textarea
-          name="entry.1838586632"
-          class="c-form__input"
-          id="field-message"
-          placeholder="お問い合わせ内容"
+          name="your-message"
+          id="message"
+          placeholder="ホームページ制作を依頼したいです。"
         ></textarea>
       </div>
       <input type="submit" class="button" value="send">
@@ -157,10 +219,13 @@
   <!--footer-->
   <footer>
     <div class="wrapper">
-      <p><small>&copy; 2023 Natsue Ideuchi</small></p>
+      <p><small>&copy; 2024 Natsue Ideuchi</small></p>
     </div>
     <img class="koala" src="images/koala.png" alt="眠たいコアラ">
   </footer>
+
+  <!--java script-->
+  <script src="js/script.js"></script>
 
 </body>
 </html>
