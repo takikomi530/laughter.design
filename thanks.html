@@ -4,96 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laughter.design</title>
-  <meta name="description" content="素敵なデザインをあなたと。">
+  <meta name="description" content="想いをカタチに。">
   <link rel="icon" type="image/png" href="images/L.d.png">
   <!--CSS-->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand&family=Yomogi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "k04nnfilf9");
-</script>
-  <!-- Begin Mieruca Embed Code -->
-<script type="text/javascript" id="mierucajs">
-window.__fid = window.__fid || [];__fid.push([532484980]);
-(function() {
-function mieruca(){if(typeof window.__fjsld != "undefined") return; window.__fjsld = 1; var fjs = document.createElement('script'); fjs.type = 'text/javascript'; fjs.async = true; fjs.id = "fjssync"; var timestamp = new Date;fjs.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://hm.mieru-ca.com/service/js/mieruca-hm.js?v='+ timestamp.getTime(); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(fjs, x); };
-setTimeout(mieruca, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent("onload", mieruca) : window.addEventListener("load", mieruca, false)) : mieruca();
-})();
-</script>
-<!-- End Mieruca Embed Code -->
 </head>
+
 <body>
   <!--HEADER-->
   <header class="page-header wrapper">
     <h1><a href="index.html"><img class="logo" src="images/logo-portfolio.png" alt="laughter.designホーム"></a></h1>
-    <nav>
+    
+    <!--ハンバーガーボタン-->
+    <button type="button" class="hamburger">
+      <span></span>
+    </button>
+    <!--ハンバーガーメニュー-->
+    <nav class="ham-nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html#about-title">about</a></li>
+        <li class="nav__item"><a href="index.html#works-title">works</a></li>
+        <li class="nav__item"><a href="index.html#service-title">service</a></li>
+        <li class="nav__item"><a href="index.html#contact-title">contact</a></li>
+      </ul>
+    </nav>
+  <!--メインナビ-->
+    <nav class="nav">
       <ul class="main-nav">
-        <li><a href="#about-title">about</a></li>
-        <li><a href="#works-title">works</a></li>
-        <li><a href="#contact-title">contact</a></li>
+        <li><a href="index.html#about-title">about</a></li>  
+        <li><a href="index.html#works-title">works</a></li>
+        <li><a href="index.html#service-title">service</a></li>
+        <li><a href="index.html#contact-title">contact</a></li>
       </ul>
     </nav>
   </header>
-
-    <!--contact-->
-    <div class="contact wrapper">
-      <img id="contact-title" src="images/contact.png" alt="contact">
-      <form
-        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfAPJSA_qGcn1kJoaIOj8beQ_FNaxaEnTnOj0ewiKSX0IlLzw/formResponse"
-        method="POST"
-        target="hidden_iframe"
-        onsubmit="submitted=true;"
-        class="c-form"
-      >  
-        <div>
-          <label for="name">name</label>
-          <input
-            name="entry.1192199861"
-            class="c-form__input"
-            id="field-name"
-            placeholder="おなまえ　花子"
-            type="text"
-            required="required"
-          />
-        </div>
-        <div>
-          <label for="email">mail adress</label>
-          <input
-            name="entry.1758713177"
-            class="c-form__input"
-            id="field-mail"
-            placeholder="sample@gmail.com"
-            type="email"
-            required="required"
-          />
-        </div>
-        <div>
-          <label for="message">message</label>
-          <textarea
-            name="entry.1838586632"
-            class="c-form__input"
-            id="field-message"
-            placeholder="お問い合わせ内容"
-          ></textarea>
-        </div>
-        <input type="submit" class="button" value="send">
-      </form>
-
-    </div><!--/.contact wrapper-->
   
+      <!--contact-->
+      <div class="contact wrapper">
+        <img id="contact-title" src="images/contact.png" alt="contact">
+        <form
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfAPJSA_qGcn1kJoaIOj8beQ_FNaxaEnTnOj0ewiKSX0IlLzw/formResponse"
+          method="POST"
+          target="hidden_iframe"
+          onsubmit="submitted=true;"
+          class="c-form"
+        >  
+          <div>
+            <label for="name">name</label>
+            <input
+              name="entry.1192199861"
+              class="c-form__input"
+              id="field-name"
+              placeholder="おなまえ　花子"
+              type="text"
+              required="required"
+            />
+          </div>
+          <div>
+            <label for="email">mail adress</label>
+            <input
+              name="entry.1758713177"
+              class="c-form__input"
+              id="field-mail"
+              placeholder="sample@gmail.com"
+              type="email"
+              required="required"
+            />
+          </div>
+          <div>
+            <label for="message">message</label>
+            <textarea
+              name="entry.1838586632"
+              class="c-form__input"
+              id="field-message"
+              placeholder="お問い合わせ内容"
+            ></textarea>
+          </div>
+          <input type="submit" class="button" value="send">
+        </form>
+  
+      </div><!--/.contact wrapper-->
   <img class="thanks-koala" src="images/thanks koala2.png" alt="送信ありがとうございます">
+
   <!--footer-->
   <footer>
-    <div class="thanksPage">
     <div class="wrapper">
-      <p><small>&copy; 2023 Natsue Ideuchi</small></p>
+      <p><small>&copy; 2024 Natsue Ideuchi</small></p>
     </div>
-    </div>
+    <img class="koala" src="images/koala.png" alt="眠たいコアラ">
   </footer>
+
+  <!--java script-->
+  <script src="js/script.js"></script>
+
 </body>
 </html>
