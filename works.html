@@ -4,38 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laughter.design</title>
-  <meta name="description" content="素敵なデザインをあなたと。">
+  <meta name="description" content="想いをカタチに。">
   <link rel="icon" type="image/png" href="images/L.d.png">
   <!--CSS-->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand&family=Yomogi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "k04nnfilf9");
-</script>
 </head>
-  <!-- Begin Mieruca Embed Code -->
-<script type="text/javascript" id="mierucajs">
-window.__fid = window.__fid || [];__fid.push([532484980]);
-(function() {
-function mieruca(){if(typeof window.__fjsld != "undefined") return; window.__fjsld = 1; var fjs = document.createElement('script'); fjs.type = 'text/javascript'; fjs.async = true; fjs.id = "fjssync"; var timestamp = new Date;fjs.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://hm.mieru-ca.com/service/js/mieruca-hm.js?v='+ timestamp.getTime(); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(fjs, x); };
-setTimeout(mieruca, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent("onload", mieruca) : window.addEventListener("load", mieruca, false)) : mieruca();
-})();
-</script>
-<!-- End Mieruca Embed Code -->
+
 <body>
   <!--HEADER-->
   <header class="page-header wrapper">
     <h1><a href="index.html"><img class="logo" src="images/logo-portfolio.png" alt="laughter.designホーム"></a></h1>
-    <nav>
+    
+    <!--ハンバーガーボタン-->
+    <button type="button" class="hamburger">
+      <span></span>
+    </button>
+    <!--ハンバーガーメニュー-->
+    <nav class="ham-nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html#about-title">about</a></li>
+        <li class="nav__item"><a href="index.html#works-title">works</a></li>
+        <li class="nav__item"><a href="index.html#service-title">service</a></li>
+        <li class="nav__item"><a href="index.html#contact-title">contact</a></li>
+      </ul>
+    </nav>
+  <!--メインナビ-->
+    <nav class="nav">
       <ul class="main-nav">
-        <li><a href="https://takikomi530.github.io/laughter.design/index.html#about-title">about</a></li>
-        <li><a href="https://takikomi530.github.io/laughter.design/index.html#works-title">works</a></li>
-        <li><a href="https://takikomi530.github.io/laughter.design/index.html#contact-title">contact</a></li>
+        <li><a href="index.html#about-title">about</a></li>  
+        <li><a href="index.html#works-title">works</a></li>
+        <li><a href="index.html#service-title">service</a></li>
+        <li><a href="index.html#contact-title">contact</a></li>
       </ul>
     </nav>
   </header>
@@ -43,29 +44,58 @@ setTimeout(mieruca, 500); document.readyState != "complete" ? (window.attachEven
   <!--worksPage-->
   <div class="worksPage wrapper">
     <img id="worksPage-title" src="images/works.png" alt="worksPage">
+    <p class="sub-title">Web Site</p>
     <div class="work">
-      <a href="https://takikomigohan7.wixsite.com/my-site-1"><img id="webAndCoachDesign" src="images/w&c design.png" alt="WEB ＆ COACH Design"></a>
-      <a href="https://takikomigohan7.wixsite.com/my-site-1"><p>WEB&COACH Design</p></a>
+      <a href="https://kato-dental-clinic.hp.peraichi.com"><img id="kato" src="images/katodc.png" alt="かとう歯科医院"></a>
+      <a href="https://kato-dental-clinic.hp.peraichi.com"><p>かとう歯科医院</p></a>
+      <p>ペライチ / Canva</p>
     </div>
     <div class="work">
-      <a href="https://takikomigohan7.wixsite.com/my-site-2"><img id="coWorking" src="images/co-working.png" alt="co-working"></a>
-      <a href="https://takikomigohan7.wixsite.com/my-site-2"><p>CO-WORKING</p></a>
+      <a href="https://wordpress530.com/"><img id="momoyama" src="images/momoyama.png" alt="momoyamans"></a>
+      <a href="https://wordpress530.com/"><p>ももやま保育園</p></a>
+      <p>WordPress / Figma / Canva</p>
     </div>
     <div class="work">
-      <a href="https://takikomigohan7.wixsite.com/mysite3"><img id="theaxisgroup" src="images/the axis group.png" alt="The Axis Group"></a>
-      <a href="https://takikomigohan7.wixsite.com/mysite3"><p>The Axis Group</p></a>
+      <a href="https://takikomigohan7.wixsite.com/mogu-mogu-kitchen"><img id="mogumogu" src="images/mogumogu.png" alt="mogumogukitchen"></a>
+      <a href="https://takikomigohan7.wixsite.com/mogu-mogu-kitchen"><p>モグモグキッチン</p></a>
+      <p>Wix / Figma / Canva</p>
     </div>
+    <div class="work">
+      <a href="https://body-trim.studio.site/"><img id="bodytrim" src="images/body-trim.png" alt="bodytrim"></a>
+      <a href="https://body-trim.studio.site/"><p>BodyTrim</p></a>
+      <p>STUDIO / Figma / Canva</p>
+    </div>
+    <div class="work">
+      <a href="https://takikomi530.github.io/Harenohi/"><img id="harenohi" src="images/harenohi ss.png" alt="Harenohi"></a>
+      <a href="https://takikomi530.github.io/Harenohi/"><p>Harenohi</p></a>
+      <p>HTML,CSS / Figma / Canva</p>
+    </div>
+    <div class="work">
+      <a href="https://laughterdesign.myshopify.com/"><img id="sorairo" src="images/sorairo.png" alt="ソライロ"></a>
+      <a href="https://laughterdesign.myshopify.com/"><p>ソライロ</p></a>
+      <p>Shopify / Canva</p>
+    </div>
+    <p class="sub-title">Graphic Design</p>
+    <div class="work">
+      <img id="jinji" src="images/jinji.jpg" alt="人事のポートフォリオ・パフォーマンス">
+      <p>人事のポートフォリオ・パフォーマンス理論</p>
+      <p>電子書籍表紙 / adobe illustrator</p>
+      </div>
     <div class="btn-box">
       <a href="#worksPage-title"><img src="images/arrowup.png" alt="上へ"></a>
     </div>
   </div>
 
-<!--footer-->
-<footer>
-  <div class="wrapper">
-    <p><small>&copy; 2023 Natsue Ideuchi</small></p>
-  </div>
-  <img class="koala" src="images/koala.png" alt="眠たいコアラ">
-</footer>
+  <!--footer-->
+  <footer>
+    <div class="wrapper">
+      <p><small>&copy; 2024 Natsue Ideuchi</small></p>
+    </div>
+    <img class="koala" src="images/koala.png" alt="眠たいコアラ">
+  </footer>
+
+  <!--java script-->
+  <script src="js/script.js"></script>
+
 </body>
 </html>
